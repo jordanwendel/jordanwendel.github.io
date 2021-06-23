@@ -1,19 +1,10 @@
 /* hovering over navigation elements on the side bar */
-.home-nav a:hover {
+.home_nav a:hover {
 	text-decoration: underline;
 }
 
-/* headshot on main page */
-img {
-	border: 5px solid rgb(255, 255, 255);
-	border-radius: 50%;
-	padding: 10px;
-	width: 200px;
-	box-shadow: 0 0 10px black;
-}
-
 /* side bar */
-.sidenav {
+.side_nav {
 	height: 100%;
 	width: 300px;
 	position: fixed;
@@ -26,8 +17,20 @@ img {
 	box-shadow: inset 0 0 10px;
 }
 
+/* headshot on main page */
+.side_nav img {
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 50%;
+	padding: 10px;
+	width: 200px;
+	box-shadow: 0 0 10px black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* side bar links */
-.sidenav a {
+.side_nav a {
 	padding: 10px 10px 20px 16px;
 	text-decoration: none;
 	text-align: center;
@@ -35,12 +38,6 @@ img {
 	font-size: 25px;
 	color: rgb(255, 255, 255);
 	display: block;
-}
-
-.sidenav img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 main {
