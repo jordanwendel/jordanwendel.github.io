@@ -1,14 +1,18 @@
-.home-main a:hover {
-	color:black
+/* hovering over navigation elements on the side bar */
+.home-nav a:hover {
+	text-decoration: underline;
 }
 
+/* headshot on main page */
 img {
 	border: 5px solid rgb(255, 255, 255);
 	border-radius: 50%;
 	padding: 10px;
 	width: 200px;
+	box-shadow: 0 0 10px black;
 }
 
+/* side bar */
 .sidenav {
 	height: 100%;
 	width: 300px;
@@ -19,19 +23,21 @@ img {
 	background-color: #2a9d8f;
 	overflow-x: hidden;
 	padding-top: 20px;
+	box-shadow: inset 0 0 10px;
 }
 
+/* side bar links */
 .sidenav a {
-	padding: 10px 6px 20px 16px;
+	padding: 10px 10px 20px 16px;
 	text-decoration: none;
 	text-align: center;
-	/* text-shadow: 2px 2px #023047; */
+	/* text-shadow: 0 0 2px black; */
 	font-size: 25px;
-	color: rgb(255,255,255);
+	color: rgb(255, 255, 255);
 	display: block;
 }
 
-.sidenav img{
+.sidenav img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
