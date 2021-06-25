@@ -55,7 +55,11 @@ body {
 .main_header {
 	background-color: #262d37;
 	height: 250px;
-	position: sticky;
+}
+
+.main_header img {
+	/* position: fixed; */
+	/* align-content: center; */
 }
 
 .projects h1 {
