@@ -6,6 +6,18 @@
 	color: #e63946;
 }
 
+body p {
+	font-family: "Nunito", sans-serif;
+	font-weight: 100;
+}
+
+body h1,
+h2,
+h3 {
+	font-family: "Nunito", sans-serif;
+	font-weight: 600 semi-bold;
+}
+
 h1,
 h2,
 h3,
