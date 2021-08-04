@@ -1,9 +1,76 @@
 /* Side Navigation */
+a:-webkit-any-link {
+	text-decoration: none;
+	color: #1d3557;
+}
 
-/* hovering over navigation elements on the side bar */
-.home_nav a:hover {
-	text-decoration: underline;
-	color: #e63946;
+.home_nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 3px 10px 3px;
+}
+
+#nav_btn {
+	border-radius: 4px;
+	background-color: #1d3557;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+#nav_btn #button_link {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	color: whitesmoke;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+#nav_btn #button_link:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: all 0.5s;
+}
+
+#nav_btn:hover a {
+	padding-right: 25px;
+	color: whitesmoke;
+}
+
+#button_link::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: whitesmoke;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+#nav_btn:hover #button_link::before {
+	transform: scaleX(1);
+}
+
+#nav_btn:hover #button_link:after {
+	opacity: 1;
+	right: 0;
 }
 
 body p {
@@ -39,8 +106,7 @@ p {
 	box-shadow: inset 0 0 10px;
 }
 
-/* headshot on main page */
-.side_nav img {
+#headshot {
 	border: 5px solid #e63946;
 	border-radius: 50%;
 	padding: 10px;
@@ -49,16 +115,6 @@ p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-/* side bar links */
-.side_nav a {
-	padding: 10px 10px 20px 16px;
-	text-decoration: none;
-	text-align: center;
-	font-size: 25px;
-	color: #1d3557;
-	display: block;
 }
 
 .side_nav h3,
